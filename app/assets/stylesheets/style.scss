@@ -1,0 +1,65 @@
+html,body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a,a:visited{
+    color: inherit !important;
+    text-decoration: none;
+//    margin: 12px;
+}
+.red{
+    color: #E74C3C !important;
+}
+.be-red{
+    background-color: #E74C3C;
+}
+.white{
+    color: #ECF0F1;
+}
+.large-padding{
+    padding: 10px 12px;
+}
+header nav ul li{
+    list-style: none;
+}
+.dspace{
+    margin-top: 0px;
+}
+#logo{
+    font-size: 1em;
+}
+.no-margin{
+    margin: 0px;
+}
+.field1{
+    height: 250px;
+    margin-top: 1em;
+}
+.field{
+    margin-top: 1em;
+}
+.form-control{
+    border-bottom: 1px solid;
+    width: 100%;
+    outline: none;
+    display: block;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+.form-space{
+    width: 80%;
+    margin: 0 auto;
+}
+.top-space{
+    margin-top: 1em;
+}
+
+
+

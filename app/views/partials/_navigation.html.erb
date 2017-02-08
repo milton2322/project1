@@ -22,8 +22,12 @@
                 <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
             </li>
             <%else%>
-                <li class="Iniciar sesion"></li>
-                <li class="Cerrar sesion"></li>
+                <li class="col-md">
+                    <%= link_to "Iniciar sesion", new_user_session_path %>
+                </li>
+                <li class="col-md">
+                    <%= link_to "Crear cuenta", new_user_registration_path %>
+                </li>
             <%end%>
         </ul>
     </nav>

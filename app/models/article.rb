@@ -2,6 +2,8 @@ class Article < ApplicationRecord
     
     belongs_to :user
     has_many :comments
+    has_many :has_categories
+    has_many :categories, through: :has_categories
     
     
     validates :title, presence: true
@@ -25,7 +27,7 @@ class Article < ApplicationRecord
         puts "++++++++++++++++++"
     end
     private  
-    
+    #lo que se ejecuta despues de crear el articulo
     def save_categories
         @categories.each do |category_id|
             HasCategory.create(category_id: category_id,article_id: self.id)

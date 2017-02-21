@@ -13,8 +13,8 @@
     <div class="field">
         Portada: <%= f.file_field :cover %>  
     </div>
-    <div class="field">
-        <%= f.text_area :body, placeholder: "Escribe aqui el articulo", class:"field1 form-control" %>
+    <div class="field">        
+        <%= f.trix_editor :body %>
     </div>
     <div class="field">
         <label for="">Categorias</label>

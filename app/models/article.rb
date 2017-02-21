@@ -17,6 +17,10 @@ class Article < ApplicationRecord
     has_attached_file :cover, styles: { medium: "1280x720", thumb: "800x600" }
     validates_attachment_content_type :cover, content_type: /\Aimage\/.*\z/
     
+    scope :publicados, ->{ where(state: "published")}
+    
+    scope :ultimos, ->{order("created_at DESC")}
+    
     #custom setter
     def categories=(value)
         @categories = value
@@ -45,8 +49,10 @@ class Article < ApplicationRecord
     private  
     #lo que se ejecuta despues de crear el articulo
     def save_categories
-        @categories.each do |category_id|
-            HasCategory.create(category_id: category_id,article_id: self.id)
+        unless @categories.nil?
+            @categories.each do |category_id|
+                HasCategory.create(category_id: category_id,article_id: self.id)
+            end
         end
     end
     

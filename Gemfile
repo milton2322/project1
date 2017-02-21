@@ -36,6 +36,9 @@ gem "devise"
 gem 'jquery-turbolinks'
 gem  'paperclip'
 gem 'aasm'
+gem 'will_paginate'
+gem 'trix'
+gem 'sanitize'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

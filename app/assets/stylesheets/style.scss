@@ -28,8 +28,26 @@ a,a:visited{
 .be-red{
     background-color: #E74C3C;
 }
+.blue{
+  color: #8992be !important;
+}
+.be-big{
+  font-size: 2em;
+}
+.be-small{
+  font-size: 12px;
+}
+.underline{
+  text-decoration: underline;
+}
+.bottom-space{
+  margin-bottom: 2em;
+}
 .white{
     color: #ECF0F1;
+}
+.grey{
+  color: #616161;
 }
 .large-padding{
     padding: 10px 12px;
@@ -42,6 +60,9 @@ header nav ul li{
 }
 .absolute{
   position: absolute;
+}
+.text-justify{
+  text-align: justify;
 }
 .dspace{
     margin-top: 0px;

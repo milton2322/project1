@@ -1,13 +1,14 @@
-<h1>Articulos</h1>
-  <div class="row col-xd-4">
-    <% @articles.each do |article| %>
-      <div class="col-md-4 !important" >
-        <h2><%= link_to article.title, article %></h2>
-      </div> 
-    <%end%>
+ <div class="container-fluid" style="margin:0 auto;">
+  <h1>Articulos</h1>
+   <div class="row">
+   <%= render @articles %>       
   </div>
-
-<div style="margin-top: 1em">
+ </div>
+  
+<div class="top-space text-center">
+  <div style="margin-top: 1em">
     <%= will_paginate @articles %>
+  </div>
 </div>
+
 

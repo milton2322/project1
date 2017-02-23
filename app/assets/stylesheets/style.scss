@@ -17,6 +17,11 @@ a,a:visited{
 .red{
     color: #E74C3C !important;
 }
+.col-md-4 {
+    -ms-flex-preferred-size: 33.33333333%;
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
 .yellow{
     color:darkgoldenrod !important;
 }
@@ -31,6 +36,12 @@ a,a:visited{
 }
 header nav ul li{
     list-style: none;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
 }
 .dspace{
     margin-top: 0px;
@@ -50,6 +61,16 @@ header nav ul li{
 }
 .text-left{
     text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.background-cover{
+  background-position: center;
+  background-size: cover;
+}
+.article-height{
+  height: 100px; 
 }
 .form-control{
     border: none;

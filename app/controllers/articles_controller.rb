@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
     def index
         # Todos los registros
         # @article esto es una  variable clase, lo que hace es reflejar lo que hay en el controlador a la vista como si fuera un scope inician con una @
+        #esto tambien me muestra cuantos registros tienen por pagina en articulos publicados
         @articles = Article.paginate(:page => params[:page], :per_page => 2).publicados.ultimos
         
     end
